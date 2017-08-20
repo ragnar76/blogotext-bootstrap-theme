@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8" />
+        <title>{article_titre_page} {blog_nom}</title>
+        <meta name="generator" content="BlogoText" />
+        <meta name="author" content="{blog_auteur}" />
+        <meta name="viewport" content="width=device-width, user-scalable=yes" />
+        <meta name="keywords" content="{keywords}" />
+        <meta name="description" content="{article_chapo}" />
+        <link rel="alternate" type="application/rss+xml" title="RSS - Articles" href="rss.php" />
+        <link rel="alternate" type="application/atom+xml" title="ATOM - Articles" href="atom.php" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="{style}/css/style.css" />
+	<link rel="stylesheet" href="{style}/css/style-mobile.css" />
+	<link rel="stylesheet" href="{style}/css/tmp.css" />
+	<link rel="stylesheet" href="../addons/calendar/style.css" />
+</head>
+
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="/">{blog_nom}</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Some Page</a></li>
+						<li><a href="#">Another Page</a></li>
+					</ul>
+					
+				</div>
+				
+			</nav>
+
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-md-12">
+<div class="jumbotron">
+<h3>Space for Images, Feature, Sliders, etc...</h3>
+</div>
+</div>
+</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-12">
+							<div id="head-main-wrapper">
+					                	<main id="main">
+									<div class="post-main">
+	                        						{BOUCLE_posts}
+	                        						{/BOUCLE_posts}                        						
+                        						</div>
+                							<div class="btn-page">{pagination}</div>
+               	 						</main>
+        						</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="sidebar">
+								<div class="sidebar-widget">
+									<div class="widget-title">Search</div>
+									<div class="widget-content">{recherche}</div>
+								</div>
+								
+								<div class="sidebar-widget">
+                                                                        <div class="widget-title">Posts by date</div>
+                                                                        <div class="widget-content">{addon_calendar}</div>
+                                                                </div>
+                                                                
+                                                                <div class="sidebar-widget">
+                                                                        <div class="widget-title">Newest Comments</div>
+                                                                        <div class="widget-content">{commentaires_encart}</div>
+                                                                </div>
+                                                                
+                                                                <div class="sidebar-widget">
+                                                                        <div class="widget-title">Categories</div>
+                                                                        <div class="widget-content">{categories_encart}</div>
+                                                                </div>
+                                                                
+                                                                <div class="sidebar-widget">
+                                                                        <div class="widget-title">Side Widget</div>
+                                                                        <div class="widget-content">You can put anything you want inside of these side widgets</div>
+                                                                </div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-md-border"><div class="footer-col"><h3 class="footer-head">Copyright</h3><p>Powered by Blogotext. A little more than a lightweight SQLite Blog-Engine. Theme hand stitched by ragnar</p><a href="#"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/nl/88x31.png"></a></div></div>
+			<div class="col-md-4 col-md-border"><div class="footer-col"><h3 class="footer-head">Info</h3><p>Just another Footer Column. Free to use for text, images, whatever</p></div></div>
+			<div class="col-md-4 col-md-border"><div class="footer-col"><h3 class="footer-head">Info</h3><p>Just another Footer Column. Free to use for text, images, whatever</p></div></div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

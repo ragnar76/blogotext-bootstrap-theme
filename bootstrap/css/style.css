@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url("../fonts/roboto-300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url("../fonts/roboto-400.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url("../fonts/roboto-700.woff") format("woff");
+}
+
+body {
+    font-family: Roboto;
+    font-size: 12pt;
+}
+
+footer {
+    border-top: solid 1px #c0c0c0;
+    background-color: rgb(39,40,34);
+    color: #ffffff;
+}
+
+.post-main {
+}
+
+.post-header {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    background-color: rgba(0,0,0,.03);
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+}
+
+.post {
+    border: solid 1px #c0c0c0;
+    margin-bottom: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.post-title {
+    font-size: 24pt;
+}
+
+.post-content {
+    padding: 10px;
+}
+
+.sidebar {
+}
+
+.sidebar-widget {
+    border: solid 1px #c0c0c0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.widget-title {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    background-color: rgba(0,0,0,.03);
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.widget-content {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.text-muted {
+    color: #868e96!important;
+    font-family: monospace;
+    font-size: 10pt;
+}
+
+.comment-counter {
+    margin: 10px;
+}
+
+.display_comments {
+    text-align: right;
+    font-weight: bold;
+}
+
+.btn-page {
+    border-radius: 10px;
+    color: #ffffff !important;
+    background-color: #5bc0de;
+    display: table-cell;
+    padding: 0px 10px 0px 10px;
+}
+
+.footer-col {
+    padding: 10px;
+    font-family: monospace;
+    min-height: 220px;
+}
+
+.footer-head {
+    width: 100%;
+    padding-bottom: 3px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.col-md-border:not(:last-child) {
+        border-right: 1px solid #cccccc;
+}
+
+.col-md-border + .col-md-border {
+        border-left: 1px solid #cccccc;
+        margin-left: -1px;
+}
+    
+
+
+#main {
+    margin-bottom: 15px;
+}
