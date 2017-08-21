@@ -2,11 +2,15 @@
     <div class="post-header">
         <div class="post-title"><a href="{article_lien}">{article_titre}</a></div>    
         <div class="text-muted">
-            Posted on  {article_date} by {blog_auteur}
+            <i class="fa fa-calendar" aria-hidden="true"></i> {article_date} <i class="fa fa-user" aria-hidden="true"></i> {blog_auteur}
         </div>
     </div>
     <div class="post-content">
         <article>{article_contenu}</article> 
-        <p class="display_comments">{nombre_commentaires}</p>
+        <div class="display_comments">
+            <i class="fa fa-folder-open" aria-hidden="true"></i>
+            {article_tags}
+            <i class="fa fa-comments" aria-hidden="true"></i> <a href="{comments_link}">{nombre_commentaires}</a>
+        </div>
     </div>
 </div>

@@ -11,25 +11,27 @@
     </div>
 </div>
 
-
 <div class="post">
     <div class="post-header">Comments</div>
+    
     <div class="post-content">
-    {BOUCLE_commentaires}
-    <article class="comment" id="{commentaire_ancre}">
-    <div class="comm-icon-side">
-    <img class="com-gravatar" width="48" height="48" src="{racine_du_site}/favatar.php?q={commentaire_md5email}" alt="avatar" />
-    <time class="com-date-time" datetime="{commentaire_date_iso}">{commentaire_date}</time>
+        {BOUCLE_commentaires}
+        <article class="comment" id="{commentaire_ancre}">
+        <div class="comm-icon-side">
+        <img class="com-gravatar" width="48" height="48" src="{racine_du_site}/favatar.php?q={commentaire_md5email}" alt="avatar" />
+        <time class="com-date-time" datetime="{commentaire_date_iso}">{commentaire_date}</time>
     </div>
+    
     <div class="comm-main-frame">
-    <header class="com-head">
-    <span class="com-author"><span class="author">{commentaire_auteur_lien}</span> a dit:</span>
-    </header>
-    <div class="com-content">
-    {commentaire_contenu}
+        <header class="com-head">
+            <span class="com-author"><span class="author">{commentaire_auteur_lien}</span>
+            wrote:</span>
+        </header>
+        <div class="com-content">
+            {commentaire_contenu}
+        </div>
 </div>
 
-</div>
 </article>
 {/BOUCLE_commentaires}
 

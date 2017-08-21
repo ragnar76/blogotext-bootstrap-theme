@@ -95,6 +95,9 @@ footer {
 .display_comments {
     text-align: right;
     font-weight: bold;
+    border-top: solid 1px #c0c0c0;
+    padding-top: 10px;
+    padding-bottom: 0px;
 }
 
 .btn-page {
@@ -126,8 +129,6 @@ footer {
         margin-left: -1px;
 }
     
-
-
 #main {
     margin-bottom: 15px;
 }
